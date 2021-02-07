@@ -12,8 +12,12 @@ Tests can then be run by using `npm test`.
 
 Alternatively, to run your own commands:
 
-`node ./src/Crawler.js crawl 'YOUR_STARTING_URL_HERE'`
+`node ./src/Crawler.js 'YOUR_STARTING_URL_HERE' MAX_DEPTH EXT_ONLY` 
+-- MAX_DEPTH in an integer stating the number of urls you want to crawl (defaults to 10)
+-- EXT_ONLY in a boolean declaring that whether you want to crawl internal links i.e. '\foo\bar' (defaults to false - internal not yet implemented)
 
 ------------
 
 #### What's Next?
+* Interal links - currently not working as no base url is present
+* TESTS!!!! Intended to use TDD but due to time constraints decided to get a base implementation in place first
