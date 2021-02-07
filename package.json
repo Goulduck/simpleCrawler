@@ -1,0 +1,41 @@
+{
+  "name": "simplecrawler",
+  "version": "1.0.0",
+  "description": "A web crawler for mapping links between pages",
+  "main": "src/Crawler.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha",
+    "lint": "eslint ./src ./test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Goulduck/simpleCrawler.git"
+  },
+  "author": "Goulduck",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Goulduck/simpleCrawler/issues"
+  },
+  "homepage": "https://github.com/Goulduck/simpleCrawler#readme",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "eslint": "^7.16.0",
+    "eslint-config-standard": "^16.0.2",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "make-runnable": "^1.3.8",
+    "mocha": "^8.2.1",
+    "sinon": "^9.2.2"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "cheerio": "^1.0.0-rc.5",
+    "fs": "0.0.1-security",
+    "jsdom": "^16.4.0",
+    "node-fetch": "^2.6.1"
+  }
+}
